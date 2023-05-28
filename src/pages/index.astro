@@ -1,15 +1,35 @@
 ---
+import '../styles/main.css'
 ---
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Manage</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- Navbar -->
+		<nav class='relative container mx-auto p-6 mt-14'>
+			<!-- Flex Container -->
+			<div class='flex items-center justify-between'>
+				<!-- Logo -->
+				<div class='pt2'>
+					<img src='/img/logo.svg' alt='Manage Logo' srcset='' />
+				</div>
+				<!-- Menu Items -->
+				<div class='hidden md:flex space-x-8'>
+					<a href='#' class='hover:text-darkGrayishBlue'>Pricing</a>
+					<a href='#' class='hover:text-darkGrayishBlue'>Product</a>
+					<a href='#' class='hover:text-darkGrayishBlue'>About Us</a>
+					<a href='#' class='hover:text-darkGrayishBlue'>Careers</a>
+					<a href='#' class='hover:text-darkGrayishBlue'>Community</a>
+				</div>
+				<!-- Button -->
+				<a href='#' class='hidden lg:main-btn'>Get Started</a>
+			</div>
+		</nav>
 	</body>
 </html>

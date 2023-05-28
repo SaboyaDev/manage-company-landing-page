@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.main-btn {
+		@apply py-3 px-8 bg-brightRed text-light rounded-full block;
+	}
+}
