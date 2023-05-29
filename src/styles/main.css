@@ -4,6 +4,29 @@
 
 @layer components {
 	.main-btn {
-		@apply py-3 px-8 bg-brightRed text-light rounded-full block;
+		@apply block rounded-full bg-brightRed px-8 py-3 text-light;
+	}
+
+	.hamburger {
+		@apply relative h-6 w-6 cursor-pointer transition-all duration-[0.25s];
+	}
+
+	.hamburger-line {
+		@apply absolute left-0 top-0 h-1 w-6 rotate-0 bg-darkBlue transition-all duration-[0.5s];
+	}
+}
+
+@layer utilities {
+	.open {
+		@apply -translate-x-1 -translate-y-2 rotate-90;
+	}
+	.open .top {
+		@apply translate-x-1.5 translate-y-1.5 rotate-45;
+	}
+	.open .middle {
+		@apply hidden;
+	}
+	.open .bottom {
+		@apply translate-x-1.5 translate-y-1.5 -rotate-45;
 	}
 }

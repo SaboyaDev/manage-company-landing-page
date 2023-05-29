@@ -1,5 +1,7 @@
 ---
 import '../styles/main.css'
+import Navbar from '../components/Navbar.astro'
+import Hero from '../components/Hero.astro'
 ---
 
 <html lang='en'>
@@ -12,24 +14,7 @@ import '../styles/main.css'
 	</head>
 	<body>
 		<!-- Navbar -->
-		<nav class='relative container mx-auto p-6 mt-14'>
-			<!-- Flex Container -->
-			<div class='flex items-center justify-between'>
-				<!-- Logo -->
-				<div class='pt2'>
-					<img src='/img/logo.svg' alt='Manage Logo' srcset='' />
-				</div>
-				<!-- Menu Items -->
-				<div class='hidden md:flex space-x-8'>
-					<a href='#' class='hover:text-darkGrayishBlue'>Pricing</a>
-					<a href='#' class='hover:text-darkGrayishBlue'>Product</a>
-					<a href='#' class='hover:text-darkGrayishBlue'>About Us</a>
-					<a href='#' class='hover:text-darkGrayishBlue'>Careers</a>
-					<a href='#' class='hover:text-darkGrayishBlue'>Community</a>
-				</div>
-				<!-- Button -->
-				<a href='#' class='hidden lg:main-btn'>Get Started</a>
-			</div>
-		</nav>
+		<Navbar />
+		<Hero />
 	</body>
 </html>

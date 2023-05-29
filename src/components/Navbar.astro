@@ -1,0 +1,31 @@
+---
+import logo from '../img/logo.svg'
+import HamburgerBtn from '../components/HamburgerBtn.astro'
+import MobileMenu from '../components/MobileMenu.astro'
+import hamburgerBtn from '../img/icon-hamburger.svg'
+---
+
+<nav class='container relative mx-auto mt-14 p-6'>
+	<!-- Flex Container -->
+	<div class='flex items-center justify-between'>
+		<!-- Logo -->
+		<div class='pt2'>
+			<img src={logo} alt='Manage Logo' srcset='' />
+		</div>
+		<!-- Menu Items -->
+		<div class='hidden space-x-8 md:flex'>
+			<a href='#' class='hover:text-darkGrayishBlue'>Pricing</a>
+			<a href='#' class='hover:text-darkGrayishBlue'>Product</a>
+			<a href='#' class='hover:text-darkGrayishBlue'>About Us</a>
+			<a href='#' class='hover:text-darkGrayishBlue'>Careers</a>
+			<a href='#' class='hover:text-darkGrayishBlue'>Community</a>
+		</div>
+		<!--CTA Button -->
+		<a href='#' class='lg:main-btn hidden'>Get Started</a>
+		<!-- Hamburger Btn -->
+		<HamburgerBtn />
+		<!-- <button class='md:hidden'><img src={hamburgerBtn} alt='' /></button> -->
+		<!-- Mobile Menu -->
+	</div>
+	<MobileMenu />
+</nav>
