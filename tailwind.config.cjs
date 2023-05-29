@@ -31,6 +31,12 @@ module.exports = {
 			fontFamily: {
 				vietmanPro: "'Be Vietnam Pro', sans-serif",
 			},
+			fontSize: {
+				'6xl': '54px',
+			},
+			boxShadow: {
+				md: '0px 15px 15px -10px',
+			},
 		},
 	},
 	plugins: [],

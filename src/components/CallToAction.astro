@@ -1,0 +1,5 @@
+---
+const { text, isHidden, class: className } = Astro.props
+---
+
+<a href='#' class:list={[className, { hidden: isHidden }]}>{text}</a>

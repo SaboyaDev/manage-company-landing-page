@@ -2,14 +2,15 @@
 import logo from '../img/logo.svg'
 import HamburgerBtn from '../components/HamburgerBtn.astro'
 import MobileMenu from '../components/MobileMenu.astro'
-import hamburgerBtn from '../img/icon-hamburger.svg'
+import CallToAction from '../components/CallToAction.astro'
+// import hamburgerBtn from '../img/icon-hamburger.svg'
 ---
 
-<nav class='container relative mx-auto mt-14 p-6'>
+<nav class='container relative mx-auto my-10 px-6 md:mb-32 md:mt-14'>
 	<!-- Flex Container -->
-	<div class='flex items-center justify-between'>
+	<div class='relative flex items-center justify-between'>
 		<!-- Logo -->
-		<div class='pt2'>
+		<div class='translate-y-1'>
 			<img src={logo} alt='Manage Logo' srcset='' />
 		</div>
 		<!-- Menu Items -->
@@ -20,12 +21,14 @@ import hamburgerBtn from '../img/icon-hamburger.svg'
 			<a href='#' class='hover:text-darkGrayishBlue'>Careers</a>
 			<a href='#' class='hover:text-darkGrayishBlue'>Community</a>
 		</div>
-		<!--CTA Button -->
-		<a href='#' class='lg:main-btn hidden'>Get Started</a>
-		<!-- Hamburger Btn -->
+		<!-- CTA -->
+		<CallToAction
+			href='#'
+			text='Get Started'
+			isHidden={true}
+			class='lg:main-btn'
+		/>
 		<HamburgerBtn />
-		<!-- <button class='md:hidden'><img src={hamburgerBtn} alt='' /></button> -->
-		<!-- Mobile Menu -->
 	</div>
 	<MobileMenu />
 </nav>
