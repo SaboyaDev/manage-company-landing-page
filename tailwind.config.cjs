@@ -32,7 +32,10 @@ module.exports = {
 				vietmanPro: "'Be Vietnam Pro', sans-serif",
 			},
 			fontSize: {
-				'6xl': '54px',
+				sm: ['16px', '30px'],
+				'3xl': ['30px', '45px'],
+				'4xl': ['40px', '50px'],
+				'6xl': ['56px', '64px'],
 			},
 			boxShadow: {
 				md: '0px 15px 15px -10px',

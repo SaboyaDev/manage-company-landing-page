@@ -1,0 +1,20 @@
+---
+import data from '../scripts/aboutReasonData'
+---
+
+{
+	data.map(reasons => {
+		const { id, title, content } = reasons
+		return (
+			<div class='flex flex-col space-y-4'>
+				<div class='radiant flex items-center space-x-3 font-bold md:space-x-7 md:bg-none'>
+					<p class='rounded-full bg-brightRed px-6 py-2 text-light'>{id}</p>
+					<p class='tracking-[-0.29px]'>{title}</p>
+				</div>
+				<p class='pr-6 text-sm tracking-wider text-darkGrayishBlue md:pl-24 md:pr-0'>
+					{content}
+				</p>
+			</div>
+		)
+	})
+}

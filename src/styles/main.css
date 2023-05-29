@@ -14,6 +14,14 @@
 	.hamburger-line {
 		@apply absolute left-0 top-0 h-1 w-6 rotate-0 bg-darkBlue transition-all duration-[0.5s];
 	}
+	.radiant {
+		background: rgb(255, 255, 255);
+		background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(253, 236, 231, 1) 46%
+		);
+	}
 }
 
 @layer utilities {
