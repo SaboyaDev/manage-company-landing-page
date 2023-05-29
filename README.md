@@ -4,5 +4,5 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" style="width: 50px"/>
 <br  />
 <p align="center" >
-  <img src="/public/img/screen.png">
+  <img src="/src/img/screen.png">
 </p>
