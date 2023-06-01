@@ -1,4 +1,6 @@
 ---
+import TestimonialCard from '../components/TestimonialCard.astro'
+import testimonials from '../scripts/testimonials'
 ---
 
 <!-- <swiper-container
@@ -11,38 +13,13 @@
 	centered-slides:='1'
 	free-mode='true'
 > -->
-<swiper-container init='false' class='my-40 xl:container'>
-	<swiper-slide class='bg-slate-300'>Slide 1</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 2</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 3</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 4</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 5</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 6</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 7</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 8</swiper-slide>
-	<swiper-slide class='bg-slate-300'>Slide 9</swiper-slide>
+<swiper-container init='false' class='test mb-14 mt-40 h-80 overflow-visible'>
+	{
+		testimonials.map(testimonial => {
+			const { img, name, comment } = testimonial
+			return <TestimonialCard url={img} name={name} comment={comment} />
+		})
+	}
 </swiper-container>
-
-<style>
-	swiper-container {
-		height: 24rem;
-	}
-
-	swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #ba7b7b;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	/* swiper-slide img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	} */
-</style>
 
 <script src='../scripts/swiper-init.js'></script>

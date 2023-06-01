@@ -44,3 +44,6 @@ module.exports = {
 	},
 	plugins: [],
 }
+
+// brightRed: 'hsl(12, 88%, 59%)' HEX: #f25f3a,
+// brightRedLight: 'hsl(12, 88%, 69%)' HEX: #f6866a,

@@ -8,6 +8,7 @@ const swiperEl = document.querySelector('swiper-container')
 
 // swiper parameters
 const swiperParams = {
+	allowTouchMove: true,
 	loop: true,
 	centeredSlides: true,
 	pagination: {
@@ -24,13 +25,19 @@ const swiperParams = {
 		768: {
 			slidesPerView: 2,
 		},
-		976: {
-			slidesPerView: 2,
-		},
-		1440: {
-			slidesPerView: 2.5,
-		},
 	},
+	injectStyles: [
+		`
+    .swiper-pagination-bullet {
+      background: none;
+      border: 1px solid #f25f3a;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color:  #f25f3a;
+    }
+  `,
+	],
 	on: {
 		init() {
 			// ...
