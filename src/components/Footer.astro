@@ -10,7 +10,7 @@ import LogoWhite from '../img/logo-white.svg'
 
 <footer class='bg-veryDarkBlue px-7 pb-7 xl:px-20'>
 	<div
-		class='container mx-auto flex flex-col space-y-8 py-20 md:flex-row-reverse'
+		class='container mx-auto flex flex-col space-y-12 pb-7 pt-20 md:flex-row-reverse'
 	>
 		<form class='flex space-x-3'>
 			<input
@@ -21,32 +21,33 @@ import LogoWhite from '../img/logo-white.svg'
 			<CtaBtn text='Go' class='main-btn shadow-none' />
 		</form>
 		<div class='flex font-extralight text-light'>
-			<div class='w-1/2'>
-				<div class='flex flex-col'>
+			<div class='w-1/2 pl-12'>
+				<div class='flex flex-col space-y-4'>
 					<a href='#'>Home</a>
 					<a href='#'>Pricing</a>
 					<a href='#'>Products</a>
 					<a href='#'>About Us</a>
 				</div>
 			</div>
-			<div class='w-1/2'></div>
-			<div class='flex flex-col'>
-				<a href='#'>Careers</a>
-				<a href='#'>Community</a>
-				<a href='#'>Privacy Policy</a>
+			<div class='w-1/2 pl-12'>
+				<div class='flex flex-col space-y-4'>
+					<a href='#'>Careers</a>
+					<a href='#'>Community</a>
+					<a href='#'>Privacy Policy</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class='flex flex-col md:flex-col-reverse'>
-		<div class='flex justify-around'>
-			<a href='#'><img src={FacebookIcon} alt='' srcset='' /></a>
-			<a href='#'><img src={YouTubeIcon} alt='' srcset='' /></a>
-			<a href='#'><img src={TwitterIcon} alt='' srcset='' /></a>
-			<a href='#'><img src={PinterestIcon} alt='' srcset='' /></a>
-			<a href='#'><img src={InstagramIcon} alt='' srcset='' /></a>
-		</div>
-		<div class='flex justify-center'>
-			<img src={LogoWhite} alt='' />
+		<div class='flex flex-col space-y-12 md:flex-col-reverse'>
+			<div class='flex justify-around'>
+				<a href='#'><img class='w-8' src={FacebookIcon} alt='' srcset='' /></a>
+				<a href='#'><img class='w-8' src={YouTubeIcon} alt='' srcset='' /></a>
+				<a href='#'><img class='w-8' src={TwitterIcon} alt='' srcset='' /></a>
+				<a href='#'><img class='w-8' src={PinterestIcon} alt='' srcset='' /></a>
+				<a href='#'><img class='w-8' src={InstagramIcon} alt='' srcset='' /></a>
+			</div>
+			<div class='flex justify-center'>
+				<img src={LogoWhite} alt='' />
+			</div>
 		</div>
 	</div>
 	<div class='text-center'>
