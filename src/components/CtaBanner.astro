@@ -1,0 +1,20 @@
+---
+import CtaBtn from '../components/CtaBtn.astro'
+---
+
+<div
+	class="bg-brightRed bg-[url('/src/img/bg-simplify-section-mobile.svg')] bg-auto bg-[center_left] bg-no-repeat px-7 py-28 md:bg-[url('/src/img/bg-simplify-section-desktop.svg')]"
+>
+	<div
+		class='container mx-auto flex flex-col space-y-14 md:flex-row md:space-y-0'
+	>
+		<div class='text-center md:w-1/2 md:text-left'>
+			<h2 class='text-4xl font-bold text-light'>
+				Simplify how your team works today.
+			</h2>
+		</div>
+		<div class='flex justify-center md:w-1/2 md:items-center md:justify-end'>
+			<CtaBtn class='secondary-btn' text='Get Started' />
+		</div>
+	</div>
+</div>

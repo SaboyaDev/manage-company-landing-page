@@ -3,17 +3,7 @@ import TestimonialCard from '../components/TestimonialCard.astro'
 import testimonials from '../scripts/testimonials'
 ---
 
-<!-- <swiper-container
-	class='mySwiper container my-40'
-	pagination='true'
-	pagination-clickable='true'
-	loop='true'
-	slides-per-view='5'
-	space-between='50'
-	centered-slides:='1'
-	free-mode='true'
-> -->
-<swiper-container init='false' class='test mb-14 mt-40 h-80 overflow-visible'>
+<swiper-container init='false' class='test mb-14 mt-24 h-80 overflow-visible'>
 	{
 		testimonials.map(testimonial => {
 			const { img, name, comment } = testimonial

@@ -1,12 +1,15 @@
 ---
 import MySwiper from '../components/MySwiper.astro'
-import CallToAction from '../components/CallToAction.astro'
+import CtaBtn from '../components/CtaBtn.astro'
 ---
 
-<div class='mb-60 text-center'>
+<div class='mb-20 px-6 text-center md:px-0'>
+	<h2 class='text-3xl font-bold text-darkBlue xl:text-4xl'>
+		What they've said
+	</h2>
 	<div class='overflow-hidden xl:container xl:mx-auto'>
 		<MySwiper />
 	</div>
 
-	<CallToAction text='Get Started' class='main-btn inline-block' />
+	<CtaBtn text='Get Started' class='main-btn inline-block' />
 </div>
