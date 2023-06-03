@@ -2,8 +2,7 @@
 import logo from '../img/logo.svg'
 import HamburgerBtn from '../components/HamburgerBtn.astro'
 import MobileMenu from '../components/MobileMenu.astro'
-import CallToAction from '../components/CallToAction.astro'
-// import hamburgerBtn from '../img/icon-hamburger.svg'
+import CtaBtn from '../components/CtaBtn.astro'
 ---
 
 <nav class='container relative mx-auto my-10 px-6 md:mb-32 md:mt-14'>
@@ -22,12 +21,7 @@ import CallToAction from '../components/CallToAction.astro'
 			<a href='#' class='hover:text-darkGrayishBlue'>Community</a>
 		</div>
 		<!-- CTA -->
-		<CallToAction
-			href='#'
-			text='Get Started'
-			isHidden={true}
-			class='lg:main-btn'
-		/>
+		<CtaBtn href='#' text='Get Started' isHidden={true} class='lg:main-btn' />
 		<HamburgerBtn />
 	</div>
 	<MobileMenu />
