@@ -10,18 +10,27 @@ import LogoWhite from '../img/logo-white.svg'
 
 <footer class='bg-veryDarkBlue px-7 pb-7 xl:px-20'>
 	<div
-		class='container mx-auto flex flex-col space-y-12 pb-7 pt-20 md:flex-row-reverse'
+		class='container mx-auto flex flex-col space-y-12 pb-7 pt-20 md:flex-row-reverse md:justify-between md:space-y-0'
 	>
-		<form class='flex space-x-3'>
-			<input
-				class='focus:shadow-outline w-full appearance-none rounded-full border px-6 py-4 leading-tight text-darkGrayishBlue shadow focus:outline-none'
-				type='text'
-				placeholder='Updates in your inbox...'
-			/>
-			<CtaBtn text='Go' class='main-btn shadow-none' />
-		</form>
-		<div class='flex font-extralight text-light'>
-			<div class='w-1/2 pl-12'>
+		<div class='md:flex md:flex-col md:justify-between'>
+			<form class='flex justify-between space-x-3'>
+				<div class='w-full'>
+					<input
+						class='focus:shadow-outline w-full appearance-none rounded-full border px-6 py-4 leading-tight text-darkGrayishBlue shadow focus:outline-none'
+						type='text'
+						placeholder='Updates in your inbox...'
+					/>
+				</div>
+				<div><CtaBtn text='Go' class='main-btn shadow-none' /></div>
+			</form>
+			<div class='hidden text-right md:block'>
+				<p class='text-xs font-extralight text-darkGrayishBlue'>
+					Copyright &copy; 2020. All Rights Reserved
+				</p>
+			</div>
+		</div>
+		<div class='flex font-extralight text-light lg:flex-1 lg:pl-32'>
+			<div class='w-1/2 pl-12 md:pl-8 lg:p-0'>
 				<div class='flex flex-col space-y-4'>
 					<a href='#'>Home</a>
 					<a href='#'>Pricing</a>
@@ -29,7 +38,7 @@ import LogoWhite from '../img/logo-white.svg'
 					<a href='#'>About Us</a>
 				</div>
 			</div>
-			<div class='w-1/2 pl-12'>
+			<div class='w-1/2 pl-12 md:pl-4 lg:p-0'>
 				<div class='flex flex-col space-y-4'>
 					<a href='#'>Careers</a>
 					<a href='#'>Community</a>
@@ -37,21 +46,33 @@ import LogoWhite from '../img/logo-white.svg'
 				</div>
 			</div>
 		</div>
-		<div class='flex flex-col space-y-12 md:flex-col-reverse'>
+		<div
+			class='flex flex-col space-y-12 md:flex-col-reverse md:justify-between md:space-y-0'
+		>
 			<div class='flex justify-around'>
-				<a href='#'><img class='w-8' src={FacebookIcon} alt='' srcset='' /></a>
-				<a href='#'><img class='w-8' src={YouTubeIcon} alt='' srcset='' /></a>
-				<a href='#'><img class='w-8' src={TwitterIcon} alt='' srcset='' /></a>
-				<a href='#'><img class='w-8' src={PinterestIcon} alt='' srcset='' /></a>
-				<a href='#'><img class='w-8' src={InstagramIcon} alt='' srcset='' /></a>
+				<a href='#'
+					><img class='w-8 md:w-5' src={FacebookIcon} alt='' srcset='' /></a
+				>
+				<a href='#'
+					><img class='w-8 md:w-5' src={YouTubeIcon} alt='' srcset='' /></a
+				>
+				<a href='#'
+					><img class='w-8 md:w-5' src={TwitterIcon} alt='' srcset='' /></a
+				>
+				<a href='#'
+					><img class='w-8 md:w-5' src={PinterestIcon} alt='' srcset='' /></a
+				>
+				<a href='#'
+					><img class='w-8 md:w-5' src={InstagramIcon} alt='' srcset='' /></a
+				>
 			</div>
 			<div class='flex justify-center'>
 				<img src={LogoWhite} alt='' />
 			</div>
 		</div>
 	</div>
-	<div class='text-center'>
-		<p class='font-sm font-extralight text-darkGrayishBlue'>
+	<div class='text-center md:hidden'>
+		<p class='text-xs font-extralight text-darkGrayishBlue'>
 			Copyright &copy; 2020. All Rights Reserved
 		</p>
 	</div>
