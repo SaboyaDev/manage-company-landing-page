@@ -14,7 +14,6 @@ const swiperParams = {
 	pagination: {
 		clickable: true,
 	},
-	// pagination: true,
 	slidesPerView: 1,
 	spaceBetween: 50,
 	breakpoints: {
@@ -24,6 +23,10 @@ const swiperParams = {
 		},
 		768: {
 			slidesPerView: 2,
+		},
+		1440: {
+			slidesPerView: 4,
+			centeredSlides: false,
 		},
 	},
 	injectStyles: [
