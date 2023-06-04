@@ -1,16 +1,21 @@
 ---
 ---
 
-<div class='md:hidden'>
+<div class='relative md:hidden'>
+	<div
+		id='menu-overlay'
+		class='fixed left-0 top-0 z-10 hidden h-full w-full bg-gradient-to-t from-zinc-950'
+	>
+	</div>
 	<div
 		id='menu'
-		class='absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center'
+		class='absolute left-6 right-6 z-30 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center'
 	>
-		<a href='#'>Pricing</a>
-		<a href='#'>Product</a>
-		<a href='#'>About Us</a>
-		<a href='#'>Careers</a>
-		<a href='#'>Community</a>
+		<a class='text-sm hover:text-darkGrayishBlue' href='#'>Pricing</a>
+		<a class='text-sm hover:text-darkGrayishBlue' href='#'>Product</a>
+		<a class='text-sm hover:text-darkGrayishBlue' href='#'>About Us</a>
+		<a class='text-sm hover:text-darkGrayishBlue' href='#'>Careers</a>
+		<a class='text-sm hover:text-darkGrayishBlue' href='#'>Community</a>
 	</div>
 </div>
 
