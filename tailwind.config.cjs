@@ -2,14 +2,6 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		// screens: {
-		// 	xsm: '375px',
-		// 	sm: '640px',
-		// 	md: '768px',
-		// 	ls: '1024px',
-		// 	xl: '1280px',
-		// 	'2xl': '1440px',
-		// },
 		screens: {
 			sm: '640px',
 			md: '768px',
